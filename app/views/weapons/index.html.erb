@@ -1,0 +1,9 @@
+<h1>Weapons#index</h1>
+<% @weapons.each do |weapon| %>
+    <p> <%= weapon.title %> </p>
+    <p> <%= weapon.name %> </p>
+    <p> <%= weapon.description %> </p>
+    <p> <%= weapon.current_power %> </p>
+    <p> <%= link_to "Detalhes - #{weapon.name}", weapon_path(weapon) %> </p>
+    <hr />
+<% end %>
